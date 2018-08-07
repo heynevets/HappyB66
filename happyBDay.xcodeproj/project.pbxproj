@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80CB8AAC2119546A00144118 /* ChinSong.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AAA2119546A00144118 /* ChinSong.mov */; };
+		80CB8AAD2119546A00144118 /* EngSong.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AAB2119546A00144118 /* EngSong.mov */; };
+		80CB8AAF211959C900144118 /* chineseSongIm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AAE211959C900144118 /* chineseSongIm.jpg */; };
+		80CB8AB121195A3B00144118 /* engImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AB021195A3B00144118 /* engImage.jpg */; };
+		80CB8AB3211961B000144118 /* Cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AB2211961B000144118 /* Cake.png */; };
+		80CB8AB5211964DE00144118 /* Goodwords.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AB4211964DE00144118 /* Goodwords.mov */; };
+		80CB8AB92119684C00144118 /* Together.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CB8AB82119684C00144118 /* Together.png */; };
 		80D459E32119441500B47A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D459E22119441500B47A22 /* AppDelegate.swift */; };
 		80D459E52119441500B47A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D459E42119441500B47A22 /* ViewController.swift */; };
 		80D459E82119441500B47A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D459E62119441500B47A22 /* Main.storyboard */; };
@@ -14,6 +21,9 @@
 		80D459ED2119441700B47A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D459EB2119441700B47A22 /* LaunchScreen.storyboard */; };
 		80D459F82119441700B47A22 /* happyBDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D459F72119441700B47A22 /* happyBDayTests.swift */; };
 		80D45A032119441700B47A22 /* happyBDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D45A022119441700B47A22 /* happyBDayUITests.swift */; };
+		80D45A1D211949B600B47A22 /* ChineseSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D45A1C211949B600B47A22 /* ChineseSongViewController.swift */; };
+		80D45A1F21194A6A00B47A22 /* EnglishSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D45A1E21194A6A00B47A22 /* EnglishSongViewController.swift */; };
+		80D45A2121194A7400B47A22 /* GoodWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D45A2021194A7400B47A22 /* GoodWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80CB8AAA2119546A00144118 /* ChinSong.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = ChinSong.mov; path = Files/ChinSong.mov; sourceTree = "<group>"; };
+		80CB8AAB2119546A00144118 /* EngSong.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = EngSong.mov; path = Files/EngSong.mov; sourceTree = "<group>"; };
+		80CB8AAE211959C900144118 /* chineseSongIm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chineseSongIm.jpg; sourceTree = "<group>"; };
+		80CB8AB021195A3B00144118 /* engImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = engImage.jpg; sourceTree = "<group>"; };
+		80CB8AB2211961B000144118 /* Cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cake.png; sourceTree = "<group>"; };
+		80CB8AB4211964DE00144118 /* Goodwords.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Goodwords.mov; path = Files/Goodwords.mov; sourceTree = "<group>"; };
+		80CB8AB82119684C00144118 /* Together.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Together.png; sourceTree = "<group>"; };
 		80D459DF2119441500B47A22 /* happyBDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happyBDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D459E22119441500B47A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80D459E42119441500B47A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,9 @@
 		80D459FE2119441700B47A22 /* happyBDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happyBDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D45A022119441700B47A22 /* happyBDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = happyBDayUITests.swift; sourceTree = "<group>"; };
 		80D45A042119441700B47A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D45A1C211949B600B47A22 /* ChineseSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseSongViewController.swift; sourceTree = "<group>"; };
+		80D45A1E21194A6A00B47A22 /* EnglishSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishSongViewController.swift; sourceTree = "<group>"; };
+		80D45A2021194A7400B47A22 /* GoodWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +117,18 @@
 		80D459E12119441500B47A22 /* happyBDay */ = {
 			isa = PBXGroup;
 			children = (
+				80D45A1C211949B600B47A22 /* ChineseSongViewController.swift */,
+				80D45A1E21194A6A00B47A22 /* EnglishSongViewController.swift */,
+				80D45A2021194A7400B47A22 /* GoodWordViewController.swift */,
+				80CB8AB82119684C00144118 /* Together.png */,
+				80CB8AB021195A3B00144118 /* engImage.jpg */,
 				80D459E22119441500B47A22 /* AppDelegate.swift */,
+				80CB8AAE211959C900144118 /* chineseSongIm.jpg */,
 				80D459E42119441500B47A22 /* ViewController.swift */,
+				80CB8AAA2119546A00144118 /* ChinSong.mov */,
+				80CB8AB4211964DE00144118 /* Goodwords.mov */,
+				80CB8AB2211961B000144118 /* Cake.png */,
+				80CB8AAB2119546A00144118 /* EngSong.mov */,
 				80D459E62119441500B47A22 /* Main.storyboard */,
 				80D459E92119441700B47A22 /* Assets.xcassets */,
 				80D459EB2119441700B47A22 /* LaunchScreen.storyboard */,
@@ -230,8 +260,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D459ED2119441700B47A22 /* LaunchScreen.storyboard in Resources */,
+				80CB8AAD2119546A00144118 /* EngSong.mov in Resources */,
+				80CB8AAF211959C900144118 /* chineseSongIm.jpg in Resources */,
+				80CB8AAC2119546A00144118 /* ChinSong.mov in Resources */,
 				80D459EA2119441700B47A22 /* Assets.xcassets in Resources */,
+				80CB8AB5211964DE00144118 /* Goodwords.mov in Resources */,
 				80D459E82119441500B47A22 /* Main.storyboard in Resources */,
+				80CB8AB92119684C00144118 /* Together.png in Resources */,
+				80CB8AB3211961B000144118 /* Cake.png in Resources */,
+				80CB8AB121195A3B00144118 /* engImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D45A1D211949B600B47A22 /* ChineseSongViewController.swift in Sources */,
 				80D459E52119441500B47A22 /* ViewController.swift in Sources */,
+				80D45A2121194A7400B47A22 /* GoodWordViewController.swift in Sources */,
+				80D45A1F21194A6A00B47A22 /* EnglishSongViewController.swift in Sources */,
 				80D459E32119441500B47A22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5VM5394SL;
 				INFOPLIST_FILE = happyBDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5VM5394SL;
 				INFOPLIST_FILE = happyBDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

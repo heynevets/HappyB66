@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,241 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="happyBDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在這個美好的日子裡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kle-dG-4ki">
+                                <rect key="frame" x="6" y="70" width="363" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我要實現您三個願望" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="him-IS-LZJ">
+                                <rect key="frame" x="6" y="133" width="363" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMD-vJ-2So">
+                                <rect key="frame" x="62" y="429" width="250" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.1823091563" blue="0.15391744709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="我想聽中文歌">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chineseSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6SZ-w8-saC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feN-XK-Xo4">
+                                <rect key="frame" x="62" y="507" width="250" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.1823091563" blue="0.15391744709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="我想聽英文歌">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="av1-k5-fft"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-Vd-FxX">
+                                <rect key="frame" x="62" y="581" width="250" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.1823091563" blue="0.15391744709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="我想聽祝賀詞">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goodWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abg-jv-QIS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cake.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ljm-Nd-fcp">
+                                <rect key="frame" x="36" y="191" width="302" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="JUx-5t-yK3"/>
+                                    <constraint firstAttribute="width" constant="302" id="MQL-uS-YWw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8fJ-Vd-FxX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="4Fh-wc-a5J"/>
+                            <constraint firstItem="Ljm-Nd-fcp" firstAttribute="top" secondItem="him-IS-LZJ" secondAttribute="bottom" constant="22" id="86e-Bo-gIm"/>
+                            <constraint firstItem="him-IS-LZJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="A1x-Vp-T4a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="him-IS-LZJ" secondAttribute="trailing" constant="6" id="GhS-Qn-yQ4"/>
+                            <constraint firstItem="kle-dG-4ki" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="InG-bH-HMI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kle-dG-4ki" secondAttribute="trailing" constant="6" id="JZ0-D2-kTi"/>
+                            <constraint firstItem="him-IS-LZJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="Nsa-Kf-VhG"/>
+                            <constraint firstItem="feN-XK-Xo4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Omh-oV-513"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fJ-Vd-FxX" secondAttribute="trailing" constant="63" id="Qay-XZ-iOn"/>
+                            <constraint firstItem="Ljm-Nd-fcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="R49-d4-v42"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ljm-Nd-fcp" secondAttribute="trailing" constant="37" id="SWX-oY-VI1"/>
+                            <constraint firstItem="yMD-vJ-2So" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Sv9-yu-Jbh"/>
+                            <constraint firstItem="kle-dG-4ki" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ZXH-1z-NyE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feN-XK-Xo4" secondAttribute="trailing" constant="63" id="igd-4I-jQG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yMD-vJ-2So" secondAttribute="trailing" constant="63" id="l4b-CX-2bE"/>
+                            <constraint firstItem="feN-XK-Xo4" firstAttribute="top" secondItem="yMD-vJ-2So" secondAttribute="bottom" constant="30" id="sAU-e9-uPj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8fJ-Vd-FxX" secondAttribute="bottom" constant="38" id="uBJ-ZC-4Hw"/>
+                            <constraint firstItem="8fJ-Vd-FxX" firstAttribute="top" secondItem="feN-XK-Xo4" secondAttribute="bottom" constant="26" id="w8I-Ie-oj6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="lJG-hE-Xh8" kind="show" identifier="goToChineseSong" id="0FY-EM-g90"/>
+                        <segue destination="AIz-Cq-tLU" kind="show" identifier="goToEnglishSong" id="s1u-QG-p9A"/>
+                        <segue destination="Nte-eY-dRY" kind="show" identifier="goToGoodWord" id="VqM-5F-Cua"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--Good Word View Controller-->
+        <scene sceneID="wLp-rh-deh">
+            <objects>
+                <viewController id="Nte-eY-dRY" customClass="GoodWordViewController" customModule="happyBDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgQ-4J-TEd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf9-uc-H9L">
+                                <rect key="frame" x="94" y="552" width="186" height="48"/>
+                                <color key="backgroundColor" red="0.34336908059999999" green="0.27847955559999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="回上一頁">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="lJG-hE-Xh8" eventType="touchUpInside" id="npE-Pp-TMq"/>
+                                    <action selector="goBack:" destination="Nte-eY-dRY" eventType="touchUpInside" id="FV5-7C-sow"/>
+                                    <action selector="goBack:" destination="AIz-Cq-tLU" eventType="touchUpInside" id="n1c-My-Cqa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Together.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBS-o1-smA">
+                                <rect key="frame" x="37" y="174" width="300" height="263"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="E4D-HC-VgK"/>
+                                    <constraint firstAttribute="width" constant="300" id="oAY-x1-ZyW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hcv-H3-j41" firstAttribute="trailing" secondItem="Qf9-uc-H9L" secondAttribute="trailing" constant="95" id="F0Y-z0-VIG"/>
+                            <constraint firstItem="Hcv-H3-j41" firstAttribute="trailing" secondItem="QBS-o1-smA" secondAttribute="trailing" constant="38" id="QQ2-NQ-slx"/>
+                            <constraint firstItem="Qf9-uc-H9L" firstAttribute="leading" secondItem="Hcv-H3-j41" secondAttribute="leading" constant="94" id="WZq-sY-aZ5"/>
+                            <constraint firstItem="Hcv-H3-j41" firstAttribute="bottom" secondItem="Qf9-uc-H9L" secondAttribute="bottom" constant="67" id="dKj-vM-r27"/>
+                            <constraint firstItem="QBS-o1-smA" firstAttribute="leading" secondItem="Hcv-H3-j41" secondAttribute="leading" constant="37" id="imG-kI-eB3"/>
+                            <constraint firstItem="QBS-o1-smA" firstAttribute="top" secondItem="Hcv-H3-j41" secondAttribute="top" constant="154" id="kqu-Wc-hw9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hcv-H3-j41"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zly-VG-kSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="535"/>
+        </scene>
+        <!--English Song View Controller-->
+        <scene sceneID="Uzs-4T-aaQ">
+            <objects>
+                <viewController id="AIz-Cq-tLU" customClass="EnglishSongViewController" customModule="happyBDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDe-HV-sEK" customClass="English">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="engImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rop-OJ-gdV">
+                                <rect key="frame" x="37.5" y="201.5" width="300" height="263"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-K0-dwC">
+                                <rect key="frame" x="94" y="552" width="186" height="48"/>
+                                <color key="backgroundColor" red="0.34336908059999999" green="0.27847955559999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="回上一頁">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="lJG-hE-Xh8" eventType="touchUpInside" id="3HY-A1-UfO"/>
+                                    <action selector="goBack:" destination="AIz-Cq-tLU" eventType="touchUpInside" id="QhJ-V2-5nK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請點我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-iy-M0V">
+                                <rect key="frame" x="142" y="124" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DdN-K0-dwC" firstAttribute="leading" secondItem="wk9-Ze-lBZ" secondAttribute="leading" constant="94" id="8jW-Mt-KMl"/>
+                            <constraint firstItem="Rop-OJ-gdV" firstAttribute="centerY" secondItem="EDe-HV-sEK" secondAttribute="centerY" id="I3i-C3-uKR"/>
+                            <constraint firstItem="Rop-OJ-gdV" firstAttribute="centerX" secondItem="EDe-HV-sEK" secondAttribute="centerX" id="O1O-ac-g72"/>
+                            <constraint firstItem="wk9-Ze-lBZ" firstAttribute="trailing" secondItem="DdN-K0-dwC" secondAttribute="trailing" constant="95" id="OC1-iu-FCz"/>
+                            <constraint firstItem="SfR-iy-M0V" firstAttribute="leading" secondItem="wk9-Ze-lBZ" secondAttribute="leading" constant="142" id="U5s-f1-6Xy"/>
+                            <constraint firstItem="wk9-Ze-lBZ" firstAttribute="trailing" secondItem="SfR-iy-M0V" secondAttribute="trailing" constant="142" id="WPF-9o-kwl"/>
+                            <constraint firstItem="SfR-iy-M0V" firstAttribute="top" secondItem="wk9-Ze-lBZ" secondAttribute="top" constant="104" id="gT0-gp-tRs"/>
+                            <constraint firstItem="wk9-Ze-lBZ" firstAttribute="bottom" secondItem="DdN-K0-dwC" secondAttribute="bottom" constant="67" id="yjb-Qe-wC1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wk9-Ze-lBZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZH-D6-NAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="34"/>
+        </scene>
+        <!--Chinese Song View Controller-->
+        <scene sceneID="Ken-ER-yAL">
+            <objects>
+                <viewController id="lJG-hE-Xh8" customClass="ChineseSongViewController" customModule="happyBDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rwq-D1-kol">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-wh-mCe">
+                                <rect key="frame" x="94" y="552" width="186" height="48"/>
+                                <color key="backgroundColor" red="0.34336908063476457" green="0.27847955557381443" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="回上一頁">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="lJG-hE-Xh8" eventType="touchUpInside" id="ycg-Rk-c5H"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chineseSongIm.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TAE-Hx-ohf">
+                                <rect key="frame" x="38" y="144" width="299" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請點我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPx-U0-IYT">
+                                <rect key="frame" x="142" y="115" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KPx-U0-IYT" firstAttribute="leading" secondItem="iro-zU-5LT" secondAttribute="leading" constant="142" id="52R-ge-U4n"/>
+                            <constraint firstItem="iro-zU-5LT" firstAttribute="bottom" secondItem="oTO-wh-mCe" secondAttribute="bottom" constant="67" id="FDy-Ts-8La"/>
+                            <constraint firstItem="iro-zU-5LT" firstAttribute="trailing" secondItem="KPx-U0-IYT" secondAttribute="trailing" constant="142" id="L5N-b5-y2v"/>
+                            <constraint firstItem="iro-zU-5LT" firstAttribute="trailing" secondItem="oTO-wh-mCe" secondAttribute="trailing" constant="95" id="l9j-PR-4Vd"/>
+                            <constraint firstItem="KPx-U0-IYT" firstAttribute="top" secondItem="iro-zU-5LT" secondAttribute="top" constant="95" id="rT4-5m-3eb"/>
+                            <constraint firstItem="oTO-wh-mCe" firstAttribute="leading" secondItem="iro-zU-5LT" secondAttribute="leading" constant="94" id="t80-sW-KSb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iro-zU-5LT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dne-6T-aMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="-431.33433283358323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cake.png" width="2048" height="1536"/>
+        <image name="Together.png" width="4122" height="3675"/>
+        <image name="chineseSongIm.jpg" width="800" height="800"/>
+        <image name="engImage.jpg" width="300" height="263"/>
+    </resources>
 </document>
